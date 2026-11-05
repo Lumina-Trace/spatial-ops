@@ -1,0 +1,10 @@
+node_modules/
+.sites-runtime/
+.env*
+!.env.example
+artifacts/
+.DS_Store
+.openai/
+dist/vendor/
+dist/assets/*.ksplat
+dist/assets/*.part
