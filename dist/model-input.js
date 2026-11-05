@@ -1,5 +1,4 @@
 export const READ_CHUNK_BYTES = 4 * 1024 * 1024;
-export const LARGE_MODEL_BYTES = 128 * 1024 * 1024;
 
 export function validateModelFile(file) {
   const ext = file.name.split(".").pop().toLowerCase();

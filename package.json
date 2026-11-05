@@ -1,0 +1,21 @@
+{
+  "name": "lumina-map-calibration",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dist --host 0.0.0.0 --port 5273 --strictPort",
+    "build": "node scripts/build.mjs",
+    "check": "node --check dist/model-input.js && node --check dist/calibration.js && node --check dist/calibration-viewer.js && node --check dist/calibration-math.js && node --check dist/calibration-flight.js && node --check dist/cloud-filter.js",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@sparkjsdev/spark": "2.0.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "vite": "7.3.6"
+  },
+  "description": "Standalone 3DGS and point-cloud map calibration tool"
+}

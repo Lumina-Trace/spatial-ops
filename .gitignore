@@ -1,2 +1,24 @@
 .DS_Store
-/platform.zip
+node_modules/
+dist/vendor/
+dist/assets/
+artifacts/
+.openai/
+.sites-runtime/
+.env*
+!.env.example
+# Former local application and assets are not part of this standalone repository.
+/platform/
+*.zip
+*.ply
+*.pcd
+*.splat
+*.ksplat
+*.spz
+*.olx
+*.obj
+*.glb
+*.gltf
+*.fbx
+*.las
+*.laz

@@ -8,7 +8,8 @@ await build({
   minify: true,
   outfile: "dist/vendor/engine.js",
 });
-await cp("node_modules/@sparkjsdev/spark/dist/assets", "dist/vendor/assets", {
+// Spark's embedded workers reference their source maps next to the engine bundle.
+await cp("node_modules/@sparkjsdev/spark/dist/assets", "dist/vendor", {
   recursive: true,
 });
 await build({ entryPoints: ["scripts/cloud-worker.mjs"], bundle: true, format: "esm", minify: true, outfile: "dist/vendor/cloud-worker.js" });

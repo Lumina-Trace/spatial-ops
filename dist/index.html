@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#11191d"><title>地图标定 · 巡境</title><link rel="stylesheet" href="/calibration.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#11191d"><title>双图标定 · Lumina Trace</title><link rel="stylesheet" href="/calibration.css"></head>
 <body>
-<header class="app-header glass"><a href="/" class="brand"><span class="brand-symbol">⬡</span><span>巡境 <small>SPATIAL OPS</small></span></a><span class="header-divider"></span><div class="page-name">地图标定 <span>CALIBRATION STUDIO</span></div><nav><a href="/">返回巡检平台 ↗</a><button id="new-project">新建标定</button><button id="restore-draft" hidden>恢复本机草稿</button><button id="project-load">导入标定</button><input id="project-file" type="file" accept=".json" hidden><button id="export" class="primary" disabled>导出标定 ↗</button></nav></header>
+<header class="app-header glass"><a href="/" class="brand"><span class="brand-symbol">⬡</span><span>双图标定 <small>LUMINA TRACE</small></span></a><span class="header-divider"></span><div class="page-name">标定工作台 <span>CALIBRATION STUDIO</span></div><nav><button id="new-project">新建标定</button><button id="restore-draft" hidden>恢复本机草稿</button><button id="project-load">导入标定</button><input id="project-file" type="file" accept=".json" hidden><button id="export" class="primary" disabled>导出标定 ↗</button></nav></header>
 <main>
 <section class="intro"><div><div class="eyebrow">TWO MAPS. ONE SPACE.</div><h1>让两张地图，落在同一个空间。</h1><p>选取相同位置，建立 3DGS 与点云之间的坐标关系。</p></div><ol class="steps"><li class="current"><b>01</b> 加载地图</li><li><b>02</b> 成对选点</li><li><b>03</b> 检查与保存</li></ol></section>
 <div id="notice" role="status" aria-live="polite">先加载两张地图。文件只在本机浏览器处理。</div>
